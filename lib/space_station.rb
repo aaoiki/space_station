@@ -1,16 +1,23 @@
 require "space_station/version"
 
 module SpaceStation
-  class SpaceShuttle
+  class SpaceStation
+    ASCII_PATH = File.join(File.dirname(__FILE__), '/space_station/ascii/')
+
     def initialize(app)
       @app = app
     end
 
     def call(env)
-      space_shuttle_path = File.join( File.dirname(__FILE__), './space_station/ascii/space_shuttle' )
-      puts IO.read(space_shuttle_path)
+      write_before_response
 
       @app.call(env)
     end
+
+    def write_before_response
+      ""
+    end
   end
 end
+
+require 'space_station/space_shuttle'
