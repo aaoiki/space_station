@@ -21,3 +21,6 @@ module SpaceStation
 end
 
 require 'space_station/space_shuttle'
+require 'space_station/f16'
+require 'space_station/airplane'
+require 'space_station/ufo'
