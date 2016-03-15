@@ -35,6 +35,7 @@ There are multiple middlewares to use:
 - Apollo
 - DarthVader
 - MiddleFinger
+- Unicorn
 
 ## Example
 
@@ -51,6 +52,7 @@ There are multiple middlewares to use:
 - http://ascii.co.uk/art
 - http://www.asciiartfarts.com/
 - http://www.ascii-middle-finger.com/
+- http://www.ascii-art.de/ascii/uvw/unicorn.txt
 
 ## Contributing
 
