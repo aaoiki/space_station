@@ -1,8 +1,7 @@
 # SpaceStation
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/space_station`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A toy gem dedicated to clients and project managers who request silly and unrealistic requirements.
+It provides simple Rack middleware that prints an ascii figure before every request.
 
 ## Installation
 
@@ -22,17 +21,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just put this line in your `config.ru` file and replace MiddlewareName with the middleware of your choice
 
-## Development
+```ruby
+  use SpaceStation::MiddlewareName
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+There are multiple middlewares to use:
+- SpaceShuttle
+- Airplane
+- F16
+- UFO
+- Apollo
+- Darth Vader
+- MiddleFinger
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Example
+
+```ruby
+  use SpaceStation::UFO
+```
+
+![UFO Example](/ufo_example.png)
+
+## ASCII Art Sources
+- http://xcski.com/~ptomblin/planes.txt
+- http://www.chris.com/ascii/joan/www.geocities.com/SoHo/7373/transp.html
+- http://ascii.co.uk/art
+- http://www.asciiartfarts.com/
+- http://www.ascii-middle-finger.com/
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/space_station. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/aasare/space_station. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
