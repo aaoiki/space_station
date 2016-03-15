@@ -28,7 +28,7 @@ Just put this line in your `config.ru` file and replace MiddlewareName with the 
   use SpaceStation::MiddlewareName
 ```
 
-There are multiple middlewares to use:
+There are multiple middleware to use:
 - SpaceShuttle
 - Airplane
 - F16
