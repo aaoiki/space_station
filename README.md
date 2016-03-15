@@ -33,12 +33,13 @@ There are multiple middlewares to use:
 - F16
 - UFO
 - Apollo
-- Darth Vader
+- DarthVader
 - MiddleFinger
 
 ## Example
 
 ```ruby
+  #config.ru
   use SpaceStation::UFO
 ```
 
