@@ -1,7 +1,8 @@
 # SpaceStation
 
 A toy gem dedicated to clients and project managers who request silly and unrealistic requirements.
-It provides simple Rack middleware that prints an ascii figure before every request.
+It provides simple Rack middleware that prints an ascii figure before every response.
+It could also be useful for debugging :laughing:
 
 ## Installation
 
