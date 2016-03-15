@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["aasarekode@gmail.com"]
 
   spec.summary       = %q{Transform Your Rack app into a Space Station}
-  spec.description   = %q{A toy middleware dedicated to clients and project managers who put unrealistic and sometimes magical requirements}
+  spec.description   = %q{A toy gem dedicated to clients and project managers who request silly and unrealistic requirements}
   spec.homepage      = "https://github.com/aasare/space_station"
   spec.license       = "MIT"
 
