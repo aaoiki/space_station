@@ -1,7 +1,7 @@
 # SpaceStation
 
-A toy gem dedicated to clients and project managers who request silly and unrealistic requirements.
-It provides simple Rack middleware that prints an ascii figure before every response.
+A toy gem dedicated to clients and project managers who make silly and unrealistic requirements.
+It provides a simple set of Rack middleware that prints an ascii figure before every response.
 It could also be useful for debugging :laughing:
 
 ## Installation
@@ -54,10 +54,6 @@ There are multiple middleware to use:
 - http://www.asciiartfarts.com/
 - http://www.ascii-middle-finger.com/
 - http://www.ascii-art.de/ascii/uvw/unicorn.txt
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/aasare/space_station. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

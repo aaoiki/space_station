@@ -6,12 +6,12 @@ require 'space_station/version'
 Gem::Specification.new do |spec|
   spec.name          = "space_station"
   spec.version       = SpaceStation::VERSION
-  spec.authors       = ["aasare"]
-  spec.email         = ["aasarekode@gmail.com"]
+  spec.authors       = ["aaooki"]
+  spec.email         = ["aaooki7@gmail.com"]
 
-  spec.summary       = %q{Transform Your Rack app into a Space Station}
-  spec.description   = %q{A toy gem dedicated to clients and project managers who request silly and unrealistic requirements}
-  spec.homepage      = "https://github.com/aasare/space_station"
+  spec.summary       = %q{Transform your rack app into a space station!}
+  spec.description   = %q{A toy gem dedicated to clients and project managers who make silly and unrealistic requirements}
+  spec.homepage      = "https://github.com/aaooki/space_station"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
