@@ -4,26 +4,24 @@ module SpaceStation
   ASCII_PATH = File.join(File.dirname(__FILE__), '/space_station/ascii').freeze
 
   class Station
-    def initialize(app)
+    def initialize(app, options = {})
       @app       = app
       @ascii_art =
         self.class.name.split('::').last.gsub(/([a-z\d])([A-Z])/,'\1_\2').downcase
+      @msg       = options.fetch(:msg, nil)
     end
 
     def call(env)
-      log_before_response(@ascii_art)
+      log_before_response
 
       @app.call(env)
     end
 
     protected
 
-    def log_before_response(to_write = @ascii_art)
-      begin
-        puts IO.read("#{SpaceStation::ASCII_PATH}/#{to_write}")
-      rescue
-        puts ''
-      end
+    def log_before_response
+      to_write = @msg || IO.read("#{SpaceStation::ASCII_PATH}/#{@ascii_art}") rescue ''
+      puts to_write
     end
   end
 
