@@ -25,9 +25,10 @@ module SpaceStation
     end
   end
 
-  klass = Class.new(SpaceStation::Station)
   Dir.entries(ASCII_PATH).select { |f| !File.directory? f }.each do |ascii_file|
+    klass      = Class.new(SpaceStation::Station)
     klass_name = ascii_file.to_s.split('_').collect(&:capitalize).join
+
     SpaceStation.const_set(klass_name, klass)
   end
 end
