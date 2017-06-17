@@ -1,7 +1,7 @@
 require "space_station/version"
 
 module SpaceStation
-  ASCII_PATH = File.join(File.dirname(__FILE__), '/space_station/ascii/').freeze
+  ASCII_PATH = File.join(File.dirname(__FILE__), '/space_station/ascii').freeze
 
   class Station
     def initialize(app)
@@ -19,7 +19,11 @@ module SpaceStation
     protected
 
     def log_before_response(to_write = @ascii_art)
-      puts IO.read("#{SpaceStation::ASCII_PATH}/#{to_write}")
+      begin
+        puts IO.read("#{SpaceStation::ASCII_PATH}/#{to_write}")
+      rescue
+        puts ''
+      end
     end
   end
 
