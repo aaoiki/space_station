@@ -38,14 +38,14 @@ There are multiple middleware to use:
 - UFO
 - Unicorn
 
-You can also pass a `:msg` option with the middleware name to print a custom message instead of the ascii art.
-
 ## Example
 
 ```ruby
   #config.ru
   use SpaceStation::UFO
 ```
+
+You can also pass a `:msg` option with the middleware name to print a custom message instead of the ascii art.
 
 ```ruby
   #config.ru
