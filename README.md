@@ -49,7 +49,7 @@ You can also pass a `:msg` option with the middleware name to print a custom mes
 
 ```ruby
   #config.ru
-  use SpaceStation::Space, msg: "Print This Message"
+  use SpaceStation::Station, msg: "Print This Message"
 ```
 
 ![UFO Example](/ufo_example.png)
