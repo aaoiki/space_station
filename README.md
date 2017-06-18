@@ -1,8 +1,8 @@
 # SpaceStation
 
-A toy gem dedicated to clients and project managers who make silly and unrealistic requirements.
-It provides a simple set of Rack middleware that prints an ascii figure before every response.
-It could also be useful for debugging :laughing:
+A toy gem dedicated to clients and project managers who make silly and unrealistic requirements sometimes.
+It provides a set of Rack middleware that prints an ascii figure with every response.
+It could also be useful for debugging.
 
 ## Installation
 
@@ -29,20 +29,27 @@ Just put this line in your `config.ru` file and replace MiddlewareName with the 
 ```
 
 There are multiple middleware to use:
-- SpaceShuttle
 - Airplane
-- F16
-- UFO
 - Apollo
 - DarthVader
+- F16
 - MiddleFinger
+- SpaceShuttle
+- UFO
 - Unicorn
+
+You can also pass a `:msg` option with the middleware name to print a custom message instead of the ascii art.
 
 ## Example
 
 ```ruby
   #config.ru
   use SpaceStation::UFO
+```
+
+```ruby
+  #config.ru
+  use SpaceStation::Space, msg: "Print This Message"
 ```
 
 ![UFO Example](/ufo_example.png)
@@ -59,4 +66,3 @@ There are multiple middleware to use:
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
