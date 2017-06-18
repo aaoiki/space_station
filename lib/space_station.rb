@@ -6,9 +6,9 @@ module SpaceStation
   class Station
     def initialize(app, options = {})
       @app       = app
+      @msg       = options.fetch(:msg, nil)
       @ascii_art =
         self.class.name.split('::').last.gsub(/([a-z\d])([A-Z])/,'\1_\2').downcase
-      @msg       = options.fetch(:msg, nil)
     end
 
     def call(env)
